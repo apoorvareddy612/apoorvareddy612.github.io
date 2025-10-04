@@ -1,207 +1,328 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Apoorva Reddy Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Apoorva Reddy Bagepalli | Data Scientist Portfolio</title>
+    <!-- Link to the main CSS file -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Fonts: Lato (Body) and Source Code Pro (Code/Stats) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons for social links and skills -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ/AH08x+J7Y5wK0zPjD8iB6A5i0G3k8uW0mQ9mYt6XQ6gU9X7H7u6Gz2wG4Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Introduction</a></li>
-							<li><a href="#one">Projects</a></li>
-							<li><a href="#two">Publications</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+    <!-- 1. Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <p class="logo">Portfolio</p>
+            <nav class="nav">
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#research">Research</a>
+                <a href="#experience">Experience</a>
+                <a href="#conferences">Conferences</a>
+                <a href="#resume" class="nav__cta">Resume</a>
+            </nav>
+        </div>
+    </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- 2. Hero Section (The Whiteboard) -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero__bg-pattern"></div> 
+            
+            <h1 id="typewriter-text" class="hero__headline monospaced"></h1>
+            <p id="typewriter-source" style="display:none;">
+                Apoorva Reddy Bagepalli
+            </p>
+            
+            <p class="hero__subtitle">
+                Data Scientist | MS in Data Science (USA)
+            </p>
+        </div>
+    </section>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Apoorva Reddy Bagepalli</h1>
-							<p>With a strong background in machine learning, statistical analysis, and data visualization, I thrive on uncovering hidden patterns in data and delivering actionable results that empower organizations to thrive in a data-driven world.</p>
-							<ul class="actions">
-								<li><a href=https://drive.google.com/file/d/13ivjNJaxIcvacE62OnZaOAShVBSUTJJa/view?usp=sharing class="button scrolly" target="_blank">resume</a></li>
-							</ul>
-						</div>
-					</section>
-				<!-- One -->
-				<section id="one" class="wrapper style3 fade-up">
-					<div class="inner">
-						<h2>Projects</h2>
-						<div class="features">
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>ExSearch: Extracting Research Trends with Topic Modelling </h3>
-								<p>Executed an NLP project focused on Topic Modeling using LDA and BERTopic to analyze AI research papers. Extracted and preprocessed text data from arXiv, then applied models to identify key topics and patterns in the content. This project enhanced my proficiency in natural language processing and data analysis, making complex information more accessible.</p>
-								<a href=https://medium.com/@apoorvareddy612/exsearch-exploring-research-trends-using-topic-modelling-011f391af5f4 class="button small" target="_blank">article link</a>
-							</section>
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Korean Drama Analysis</h3>
-								<p>Collected and formatted dataset manually, analyzed and visualized for interpreting the data, implemented functions taking user’s preferences and producing recommended TV shows.</p>
-								<a href=https://github.com/apoorvareddy612/Kdramas_Analysis class="button small" target="_blank">repo link</a>&nbsp &nbsp<a href=https://medium.com/@apoorvareddy612/korean-drama-analysis-4da6146ffaab class="button small" target="_blank">article link</a>
-							</section>
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>World Happiness Report</h3>
-								<p>Developed a data visualisation web application, which analyzed the World happiness data(2015-2019), interpreting and giving actionable insights on the data,developed a interactive UI with Streamlit.</p>
-								<a href=https://github.com/apoorvareddy612/World-Happiness-Report class="button small" target="_blank">repo link</a>
-							</section>
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Music Genre Classifer</h3>
-								<p>Transformed the audio files into Mel-Frequency Cepstrum Coefficients(MFCC) and implemented CNN classifier to distinguish genre of different audios.</p>
-								<a href=https://github.com/apoorvareddy612/Music-Genre-Classifier class="button small" target="_blank">repo link</a>
-							</section>
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Semi-Supervised Generative Adversarial Network for Animal Health Classification</h3>
-								<p>Developed a semi-supervised GAN (SGAN) for detecting animal health statuses, utilizing advanced image augmentation and fuzzy brightness correction techniques. Achieved 91% accuracy on the augmented COCO dataset, significantly improving image clarity and detection precision.</p>
-								<a href=https://github.com/apoorvareddy612/Healthy-Unhealthy-Animal-Classification class="button small" target="_blank">repo link</a>
-							</section>
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Predictive Modeling and Statistical Analysis of US Accident Trends</h3>
-								<p>Developed a predictive model in R using US Accidents data (2016-2023) to identify optimal locations for new amenities, providing insights to enhance safety and optimize resource allocation. Applied statistical analysis to uncover patterns and support strategies for mitigating accident risks.</p>
-								<a href=https://github.com/apoorvareddy612/DATS6101_Project class="button small" target="_blank">repo link</a>
-							</section>
-							<!-- <section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Urna quis bibendum</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								<a href="#" class="button small" target="_blank">repo link</a>
-							</section>
-							<section>
-								<span class="icon solid major fa-code"></span>
-								<h3>Aliquam urna dapibus</h3>
-								<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								<a href="#" class="button small" target="_blank">repo link</a>
-							</section> -->
-						</div>
-						<!-- <ul class="actions">
-							<li><a href="generic.html" class="button">Learn more</a></li>
-						</ul> -->
-					</div>
-				</section>
+    <!-- --- Main Content Sections --- -->
 
-				<!-- Two -->
-					<section id="two" class="wrapper style2 spotlights">
-						<div class="inner">
-							<h2>Publications</h2>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-book"></span>
-									<h3>Impact of Cross-Validation on Machine Learning Models for Early Detection of Intrauterine Fetal Demise</h3>
-									<p>This research addresses the global concern of intrauterine fetal demise by using machine learning models to detect fetal health, achieving 99% accuracy through cross-validation, particularly with Gradient Boosting and Voting Classifier. The study also explores Blackbox evaluation techniques to understand model mechanisms and feature selection.</p>
-									<a href=https://www.mdpi.com/2075-4418/13/10/1692 class="button small" target="_blank">paper link</a>
-								</section>
-								<section>
-									<span class="icon solid major fa-book"></span>
-									<h3>Healthy-unhealthy animal detection using semi-supervised generative adversarial network</h3>
-									<p>This study introduces a novel deep learning approach for the detection of healthy and unhealthy animals in images, achieving an impressive 91% accuracy through image augmentation and a semi-supervised generative adversarial network (SGAN). This innovative method significantly advances the field of animal health detection in computer vision applications.</p>
-									<a href=https://peerj.com/articles/cs-1250/ class="button small" target="_blank">paper link</a>
-								</section>
-								<section>
-									<span class="icon solid major fa-book"></span>
-									<h3>Taxi Origin-Destination Demand Prediction using DNN Algorithm with NYU Database</h3>
-									<p>This paper introduces the novel concept of predicting taxi demand between all-area pairs, going beyond traditional methods that focus solely on taxi origin locations. It demonstrates the superior performance of a Deep Neural Network (DNN) in capturing demand patterns compared to conventional AI techniques, through extensive testing on a large dataset.</p>
-									<a href=https://ieeexplore.ieee.org/document/9823527 class="button small" target="_blank">paper link</a>
-								</section>
-								<section>
-									<span class="icon solid major fa-book"></span>
-									<h3>Neural Network Optimized Medical Image Classification with a Deep Comparison</h3>
-									<p>
-										In clinical care and education, traditional methods for medical image categorization have limitations in terms of performance and efficiency. To address this,we focus on leveraging deep neural networks, particularly convolutional neural networks (CNN), to enhance the accuracy and accessibility of medical image classification, with potential life-saving implications like pneumonia diagnosis through X-ray analysis.</p>
-									<a href=https://ieeexplore.ieee.org/document/10011109 class="button small" target="_blank">paper link</a>
-								</section>
-								<!-- <section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-									<a href="#" class="button small" target="_blank">repo link</a>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-									<a href="#" class="button small" target="_blank">repo link</a>
-								</section> -->
-							</div>
-							<!-- <ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul> -->
-						</div>
-					</section>
+    <!-- UPDATED SKILLS SECTION WITH ICONS -->
+    <section id="skills" class="section section--skills">
+        <div class="container">
+            <h2>Skills & Technologies</h2>
+            <div class="skills-grid">
+                
+                <!-- Skills Category 1: Programming & Core DS -->
+                <div class="skills-card">
+                    <h3 class="monospaced">Languages & Tools</h3>
+                    <ul>
+                        <li><span class="icon-text"><i class="fab fa-python"></i> <span class="monospaced">Python</span></span></li>
+                        <li><span class="icon-text"><i class="fas fa-database"></i> <span class="monospaced">SQL</span></span></li>
+                        <li><span class="icon-text"><i class="fab fa-github"></i> <span class="monospaced">Git/GitHub</span></span></li>
+                    </ul>
+                </div>
+                
+                <!-- Skills Category 2: Machine Learning & AI -->
+                <div class="skills-card">
+                    <h3 class="monospaced">Machine Learning & AI</h3>
+                    <ul>
+                        <li><span class="icon-text"><i class="fas fa-brain"></i> <span class="monospaced">PyTorch/Tensorflow</span></span></li>
+                        <li><span class="icon-text"><i class="fas fa-robot"></i> <span class="monospaced">Hugging Face</span></span></li>
+                        <li><span class="icon-text"><i class="fas fa-microchip"></i> <span class="monospaced">Langchain</span></span></li>
+                    </ul>
+                </div>
+                
+                <!-- Skills Category 3: Cloud & MLOps -->
+                <div class="skills-card">
+                    <h3 class="monospaced">Cloud & MLOps</h3>
+                    <ul>
+                        <li><span class="icon-text"><i class="fab fa-aws"></i> <span class="monospaced">AWS</span></span></li>
+                        <li><span class="icon-text"><i class="fab fa-docker"></i> <span class="monospaced">Docker</span></span></li>
+                        <li><span class="icon-text"><i class="fas fa-cloud"></i><span class="monospaced">Spark</span></span></li>
+                    </ul>
+                </div>
+
+                <!-- Skills Category 4: LLM Infrastructure -->
+                <div class="skills-card">
+                    <h3 class="monospaced">LLM Infrastructure</h3>
+                    <ul>
+                            <li><span class="icon-text"><i class="fas fa-database"></i> <span class="monospaced">Vector Databases</span> </span></li>
+                            <li><span class="icon-text"><i class="fas fa-project-diagram"></i> <span class="monospaced">RAG</span></span></li>
+                            <li><span class="icon-text"><i class="fas fa-code"></i> <span class="monospaced">Prompt Engineering</span></span></li>
+                            <li><span class="icon-text"><i class="fas fa-vials"></i> <span class="monospaced">Experiment Tracking</span></span></li>
+                            <li><span class="icon-text"><i class="fas fa-eye"></i> <span class="monospaced">Monitoring</span></span></li>
+                    </ul>
+                </div>
+
+                <!-- Skills Category 5: Visualization -->
+                <div class="skills-card">
+                    <h3 class="monospaced">Visualization</h3>
+                    <ul>
+                        <li><span class="icon-text"><i class="fas fa-chart-line"></i><span class="monospaced">Tableau</span></span></li>
+                        <li><span class="icon-text"><i class="fas fa-chart-line"></i><span class="monospaced">PowerBI</span></span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span> Washington DC
-											</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">apoorvareddybagepalli@gmail.com</a>
-										</li>
-										<!-- <li>
-											<h3>Phone</h3>
-											<span>(571) 547-8082</span>
-										</li> -->
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href=https://github.com/apoorvareddy612 class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+    <section id="education" class="section section--education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                
+                <div class="education-entry">
+                    <h3>Master of Science in Data Science (M.S.)</h3>
+                    <p class="monospaced degree-info">George Washington University | Washington D.C (USA)</p>
+                    <p class="monospaced degree-date">Graduation: May 2025</p>
+                    <div class="courses-list">
+                        <h4>Key Courses Taken:</h4>
+                        <ul>
+                            <li>Data Warehouse(SQL/Hadoop/Spark)</li>
+                            <li>Time Series Analysis <span class="tag">(Teaching Assistantship)</span></li>
+                            <li>Natural Language Processing <span class="tag">(Teaching Assistantship)</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-												<li><a href=https://www.linkedin.com/in/apoorvareddybagepalli/ class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-						</div>
-					</section>
+                <div class="education-entry">
+                    <h3>Bachelor of Technology in Computer Science (B.Tech)</h3>
+                    <p class="monospaced degree-info">Vellore Institute of Technology | Vellore (India)</p>
+                    <p class="monospaced degree-date">Graduation: May 2023</p>
+                    <div class="courses-list">
+                        <h4>Relevant Areas:</h4>
+                        <ul>
+                            <li>Deep Learning</li>
+                            <li>Probability and Statistics</li>
+                            <li>Database Management</li>
+                            <li>Artificial Intelligence</li>
+                        </ul>
+                    </div>
+                </div>
 
-			</div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section section--projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                <!-- Project Card 1: PodMatch -->
+                <div class="project-card">
+                    <h3 class="project-title">PodMatch: Intelligence Search for Podcasts</h3>
+                    <p class="project-duration">Jan 2025 - May 2025</p>
+                    <p class="project-desc">
+                        Developed a semantic search system for podcast transcripts to retrieve relevant episodes using keyword search, information retrieval, transformers, attention mechanisms, and topic modeling. Integrated vector embeddings into a Streamlit interface to suggest the five most relevant podcast titles, improving user experience and search accuracy.
+                    </p>
+                    <div class="project-meta">
+                        <p class="project-skills">Skills Used: <span class="monospaced">Python, Transformers, Vector Embeddings, Streamlit, NLP</span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/apoorvareddy612/Capstone-Project-2025" target="_blank" class="btn btn--secondary">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
 
-	</body>
+                <!-- Project Card 2: Forecasting Daily Energy Prices -->
+                <div class="project-card">
+                    <h3 class="project-title">Forecasting Daily Energy Prices</h3>
+                    <p class="project-duration">Sept 2024 - Dec 2024</p>
+                    <p class="project-desc">
+                        Built and evaluated time series forecasting models (ARMA, ARIMA, SARIMA, Box-Jenkins) using energy demand, generation, and weather data. Supported improved strategic planning and decision-making in the energy sector by providing accurate daily price forecasts.
+                    </p>
+                    <div class="project-meta">
+                        <p class="project-skills">Skills Used: <span class="monospaced">Python, Statsmodels, Time Series Analysis, Data Visualization</span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/apoorvareddy612/Time_Series_Project" target="_blank" class="btn btn--secondary">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: US Accident Trends -->
+                <div class="project-card">
+                    <h3 class="project-title">Predictive Modeling of US Accident Trends</h3>
+                    <p class="project-duration">Oct 2023 - Dec 2023</p>
+                    <p class="project-desc">
+                        Developed a predictive model in R to identify optimal locations for emergency resources using US accident data. Performed statistical analysis and created dashboards to assess the impact of external factors, enhancing safety strategies and optimizing resource allocation.
+                    </p>
+                    <div class="project-meta">
+                        <p class="project-skills">Skills Used: <span class="monospaced">R, Predictive Modeling, Statistical Analysis, Data Visualization, Dashboarding</span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/apoorvareddy612/DATS6101_Project" target="_blank" class="btn btn--secondary">GitHub <i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project Card 4: ExSearch NLP -->
+                <div class="project-card">
+                    <h3 class="project-title">ExSearch: Extracting Research Trends with Topic Modeling</h3>
+                    <p class="project-duration">Aug 2023 - Oct 2023</p>
+                    <p class="project-desc">
+                        Executed an NLP project using LDA and BERTopic to analyze AI research papers. Extracted and preprocessed arXiv text data, applied models to identify key topics and trends, and made complex information more accessible through analysis.
+                    </p>
+                    <div class="project-meta">
+                        <p class="project-skills">Skills Used: <span class="monospaced">Python, NLP, LDA, BERTopic, Scikit-learn</span></p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://medium.com/@apoorvareddy612/exsearch-exploring-research-trends-using-topic-modelling-011f391af5f4" target="_blank" class="btn btn--secondary btn--optional">Medium Article <i class="fas fa-file-alt"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section id="research" class="section section--research">
+        <div class="container">
+            <h2>Research & Publications</h2>
+            <div class="research-grid">
+                
+                <div class="research-card">
+                    <h3>Impact of Cross-Validation on Machine Learning Models for Early Detection of Intrauterine Fetal Demise</h3>
+                    <p class="journal monospaced">MDPI, Vol 13, Issue 10</p>
+                    <p class="abstract-summary">This research addresses the global concern of intrauterine fetal demise by using machine learning models to detect fetal health, achieving 99% accuracy through cross-validation, particularly with Gradient Boosting and Voting Classifier. The study also explores Blackbox evaluation techniques to understand model mechanisms and feature selection.</p>
+                    <div class="research-links">
+                        <a href="https://www.mdpi.com/2075-4418/13/10/1692" target="_blank" class="btn btn--secondary">Read Paper <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                
+                <div class="research-card">
+                    <h3>Healthy-unhealthy animal detection using semi-supervised generative adversarial network</h3>
+                    <p class="journal monospaced">PeerJ Computer Science, 2023</p>
+                    <p class="abstract-summary">This study introduces a novel deep learning approach for the detection of healthy and unhealthy animals in images, achieving an impressive 91% accuracy through image augmentation and a semi-supervised generative adversarial network (SGAN). This innovative method significantly advances the field of animal health detection in computer vision applications.</p>
+                    <div class="research-links">
+                        <a href="https://peerj.com/articles/cs-1250/" target="_blank" class="btn btn--secondary">Read Paper <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK EXPERIENCE SECTION -->
+    <section id="experience" class="section section--experience">
+        <div class="container">
+            <h2>Work Experience</h2>
+            <div class="experience-timeline">
+                
+                <!-- Experience 1: Current/Recent -->
+                <div class="experience-entry">
+                    <h3>Data Scientist</h3>
+                    <p class="job-title monospaced">Vakilsearch | Bengaluru, India</p>
+                    <p class="job-date">July 2025 – Present</p>
+                    <ul>
+                        <li>Created and deployed a FastAPI-powered, rule-based recommendation system with PostgreSQL, automating service suggestions, enforcing rules, validating subscriptions, and improving workflow efficiency by 40%.</li>
+                        <li>Deployed a real-time call evaluation system using Gemini and OpenAI, delivering structured insights on lawyer communication, significantly driving a 50% reduction in analysis time while increasing client ratings by 25%</li>
+                        <li>Partnered with engineers and legal experts to design and integrate AI pipelines seamlessly into legal workflows.</li>
+                    </ul>
+                </div>
+                
+                <!-- Experience 2: Previous -->
+                <div class="experience-entry">
+                    <h3>Data Scientist</h3>
+                    <p class="job-title monospaced">Blackcoffer | Delhi, India</p>
+                    <p class="job-date">November 2022 – June 2023</p>
+                    <ul>
+                        <li>Engineered scalable ETL solution for Bing Ad data on Google Cloud Platform, enabling the client to track and compare ad engagement metrics against competitors, reducing processing time by 30%.</li>
+                        <li>Increased website traffic by 20% and user engagement by designing multimodal generative AI chatbot integrated with Redis Database and Docker containers to streamline data interactions. </li>
+                        <li>Deployed automated trading system on AWS, ensuring continuous and scalable operation of trading bots via virtual machine; implemented Python scripts to pull real-time market data and trigger trades.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONFERENCES SECTION -->
+    <section id="conferences" class="section section--conferences">
+        <div class="container">
+            <h2>Conferences & Seminars</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <h3>DevFest Bengaluru 2025</h3>
+                    <p class="journal monospaced">Bengaluru, KA</p>
+                    <p class="abstract-summary">Upcoming event - will be attending in December 2025</p>
+                </div>
+
+                <!-- <div class="research-card">
+                    <h3>Poster Presentation: Deep Learning for Crop Yield Prediction</h3>
+                    <p class="journal monospaced">International Conference on Machine Learning (ICML) Satellite Event</p>
+                    <p class="abstract-summary">Showcased a convolutional neural network (CNN) model that integrated satellite imagery and weather data for early-season yield forecasts with high spatial accuracy.</p>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section section--resume">
+        <div class="container">
+            <h2>Download Resume</h2>
+            <p>If you want my portfolio in PDF, you can download my full resume here.</p>
+            <a href="https://drive.google.com/file/d/1eFbqkOAF1zc6e0cv99bA8CielUh_00W9/view?usp=sharing" download class="btn btn--primary">Download Resume (PDF)</a>
+        </div>
+    </section>
+
+    <!-- 3. Footer & Contact -->
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__cta">Let's connect or schedule a chat!</p>
+            <div class="footer__links">
+                <!-- REQUIRED FOOTNOTE LINKS -->
+                <a href="https://mail.google.com/mail/u/0/?fs=1&to=apoorvareddybagepalli@gmail.com&su=[Subject]&tf=cm" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/apoorvareddybagepalli/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/apoorvareddy612" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.researchgate.net/profile/Apoorva-Reddy-3?ev=hdr_xprf" target="_blank" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                <a href="https://calendly.com/apoorvareddybagepalli" target="_blank" title="Schedule a Call" class="calendly-link"><i class="fas fa-calendar-alt"></i> Schedule Chat</a>
+            </div>
+            <p class="footer__copy">&copy; 2025 Apoorva Reddy Bagepalli. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to the main JavaScript file (at the end for performance) -->
+    <script src="js/main.js"></script>
+</body>
 </html>
